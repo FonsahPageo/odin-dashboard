@@ -1,10 +1,75 @@
+body{
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 10px;
+}
+
+ul li {
+    list-style: none;
+    padding: 4px;
+}
+
+header{
+    width: 76%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
+    height: 100%;
+}
+
+.top-row, .bottom-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile, .user, .actions{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sidebar{
+    height: 100vh;
+    background-color: lightblue;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .odin-logo{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     background-color: orange;
     border: 1px solid #fff;
     border-radius: 50%;
 }
+
+.searchbar{
+    width: 50%;
+    padding: 2px;
+    border-radius: 10px;
+    border: none;
+    background-color: #eee;
+}
+
+button{
+    background-color: rgb(106, 106, 192);
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+
 
 .container{
     display: grid;
@@ -54,11 +119,9 @@
 .announcement{
     grid-column: 3 / 4;
     grid-row: 1 / span 3;
-    /* height: 60%; */
 }
 
 .trending{
     grid-column: 3 / 4;
     grid-row: 4 / 7;
-    height: 80%;
 }
