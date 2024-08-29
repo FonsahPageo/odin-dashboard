@@ -1,22 +1,20 @@
 body{
     background-color: #f2f2f2;
-    margin: 0;
-    padding: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header{
-    width: 75%;
-    float: right;
     display: flex;
     flex-direction: column;
     background-color: #fff;
     padding: 10px;
+    margin-bottom: 30px;
 }
 
 .top-row, .bottom-row{
     display: flex;
     justify-content: space-between;
+    padding: 10px;
     align-items: center;
 }
 
@@ -29,7 +27,6 @@ header{
 .sidebar{
     height: 100vh;
     background-color: rgb(54, 117, 199);
-    width: 22%;
     display: flex;
     flex-direction: column;
     float: left;
@@ -91,8 +88,8 @@ button{
 .container{
     display: grid;
     grid-template-columns: repeat(2, 2fr) 1.5fr;
-    grid-template-rows: repeat(6, 120px);
-    gap: 5px;
+    grid-template-rows: auto repeat(6, 120px);
+    gap: 10px;
 }
 
 .project-1, .project-2, .project-3, .project-4, .project-5, .project-6, .announcement, .trending {
